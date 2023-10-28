@@ -85,7 +85,13 @@
                       </ul>
                     </li>
                     <li>
-                    <a><b>Jumlah Pemain:  </b><script type='text/javascript'>document.write(api.players +' / '+ api.maxplayers);</script></a>
+                    <a id="playerCount"><b>Jumlah pemain: </b><span id="playerStats"></span></a>
+                    <script type='text/javascript'>
+                      var playerStats = api.players + ' / ' + api.maxplayers;
+                      document.getElementById('playerStats').innerText = playerStats;
+                      document.getElementById('playerStats').style.color = 'blue';
+                    </script>
+
                     </li>
                   </ul>
                 </div>
