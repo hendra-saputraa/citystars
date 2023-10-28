@@ -89,9 +89,11 @@
                     <script type='text/javascript'>
                       var playerStats = api.players + ' / ' + api.maxplayers;
                       document.getElementById('playerStats').innerText = playerStats;
-                      document.getElementById('playerStats').style.color = 'blue';
+                      var playerStatsElement = document.getElementById('playerStats');
+                      playerStatsElement.style.fontWeight = 'bold';
+                      playerStatsElement.style.marginLeft = '5px';
+                      playerStatsElement.style.color = '#00b3f0';
                     </script>
-
                     </li>
                   </ul>
                 </div>
